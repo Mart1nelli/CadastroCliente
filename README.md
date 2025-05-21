@@ -49,7 +49,7 @@ Este projeto é uma aplicação desktop desenvolvida em **Java Swing** para gere
 
 1. Crie o banco de dados no MySQL:
 
-        ``sql
+        sql
         CREATE DATABASE cadastro_clientes;
         USE cadastro_clientes;
         
@@ -59,13 +59,14 @@ Este projeto é uma aplicação desktop desenvolvida em **Java Swing** para gere
             cpf VARCHAR(14) NOT NULL,
             telefone VARCHAR(15),
             email VARCHAR(100)
-        );``
+        );
 
 ---
  3. No arquivo ClienteDAO.java, configure os dados da sua conexão:
-    private final String URL = "jdbc:mysql://localhost:3306/cadastro_clientes";
-    private final String USER = "seu_usuario";
-    private final String PASSWORD = "sua_senha";
+
+            private final String URL = "jdbc:mysql://localhost:3306/cadastro_clientes";
+            private final String USER = "seu_usuario";
+            private final String PASSWORD = "sua_senha";
 
 ---
 
