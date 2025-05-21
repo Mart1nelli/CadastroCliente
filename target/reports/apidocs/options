@@ -1,0 +1,24 @@
+-classpath
+'C:/Users/Victoria-Pc/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar;C:/Users/Victoria-Pc/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar;C:/Users/Victoria-Pc/.m2/repository/org/netbeans/external/AbsoluteLayout/RELEASE260/AbsoluteLayout-RELEASE260.jar'
+-encoding
+'UTF-8'
+-protected
+--release
+24
+-sourcepath
+'C:/Users/Victoria-Pc/OneDrive/Documents/NetBeansProjects/CadastroCliente/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Victoria-Pc/OneDrive/Documents/NetBeansProjects/CadastroCliente/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'CadastroCliente 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'CadastroCliente 1.0-SNAPSHOT API'

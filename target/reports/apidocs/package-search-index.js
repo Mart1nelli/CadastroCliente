@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.edamatec.cadastrocliente"},{"l":"com.edamatec.cadastrocliente.dao"},{"l":"com.edamatec.cadastrocliente.model"},{"l":"com.edamatec.cadastrocliente.util"},{"l":"com.edamatec.cadastrocliente.view"}];updateSearchResults();
