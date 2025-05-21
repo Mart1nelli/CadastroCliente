@@ -49,22 +49,25 @@ Este projeto é uma aplicação desktop desenvolvida em **Java Swing** para gere
 
 1. Crie o banco de dados no MySQL:
 
-``sql
-CREATE DATABASE cadastro_clientes;
-USE cadastro_clientes;
+        ``sql
+        CREATE DATABASE cadastro_clientes;
+        USE cadastro_clientes;
+        
+        CREATE TABLE clientes (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            nome VARCHAR(100) NOT NULL,
+            cpf VARCHAR(14) NOT NULL,
+            telefone VARCHAR(15),
+            email VARCHAR(100)
+        );``
 
-CREATE TABLE clientes (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    cpf VARCHAR(14) NOT NULL,
-    telefone VARCHAR(15),
-    email VARCHAR(100)
-);``
+---
+ 3. No arquivo ClienteDAO.java, configure os dados da sua conexão:
+    private final String URL = "jdbc:mysql://localhost:3306/cadastro_clientes";
+    private final String USER = "seu_usuario";
+    private final String PASSWORD = "sua_senha";
 
-3. No arquivo ClienteDAO.java, configure os dados da sua conexão:
-   private final String URL = "jdbc:mysql://localhost:3306/cadastro_clientes";
-private final String USER = "seu_usuario";
-private final String PASSWORD = "sua_senha";
+---
 
 ▶️ Como Rodar
 Clone ou baixe o projeto para sua máquina.
@@ -76,6 +79,8 @@ Adicione o driver JDBC do MySQL ao classpath (ex: mysql-connector-java-X.X.X.jar
 Edite ClienteDAO.java com seu usuário e senha do MySQL.
 
 Rode a classe TelaDeCadastroCliente.java para iniciar a aplicação.
+
+---
 
 🧭 Como Usar
 Cadastrar novo cliente:
@@ -92,6 +97,8 @@ Digite o nome ou CPF no campo e clique em Buscar.
 
 Limpar formulário:
 Clique no botão Limpar para limpar os campos e cadastrar um novo cliente.
+
+---
 
 🧠 Explicação Técnica
 O formulário usa JTextField e JFormattedTextField com máscara para CPF e telefone.
